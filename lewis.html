@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Title</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="lewis.css">
+    </head>
+    <body>
+        <div id="header"></div>
+        
+        <div class="container">
+            <div class="box box1">
+                <h3>What I learned</h3>
+                <p>I learned so much about all networking concepts. I now feel confident that almost regardless of what a customer or project needs I have the tools to problem solve my way through it.</p>
+            </div>
+            <div class="box box2">
+                <h3>Most and Least Favorite Part</h3>
+                <p>
+                    My favorite part was probably the hands on aspect of it. I love being able to break and fix the things. My least favorite part was probably getting stuck and not having access to help for several hours or a full day. 
+                </p>
+            </div>
+            <div class="box box3">
+                <h3>What I would Improve</h3>
+                <p>I would improve the hiring and vetting process of interns....(abhinav). I would have liked to have a activity where we have a list of customer needs but aren't told how to solve the probelm, we just pick what we think is the best thing for our usecase.</p>
+            </div>
+            <div class="box box4">
+                <h3>Would I recommond this to others?</h3>
+                <p>I absolutely would recommend this to others intrested in working with computers, networking or otherwise. I feel like I have a signifigantly better understanding of how networks work and function that I believe will help me in the future.</p>
+            </div>
+            <div class="box box5" onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">
+      <div class="face">
+        <div class="eye left"><div class="pupil" id="pupil-left"></div></div>
+        <div class="eye right"><div class="pupil" id="pupil-right"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const leftPupil = document.getElementById('pupil-left');
+    const rightPupil = document.getElementById('pupil-right');
+    const face = document.querySelector('.face');
+
+    document.addEventListener('mousemove', (e) => {
+      const rect = face.getBoundingClientRect();
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      const dx = e.clientX - cx;
+      const dy = e.clientY - cy;
+      const angle = Math.atan2(dy, dx);
+      const px = Math.cos(angle) * 5;
+      const py = Math.sin(angle) * 5;
+
+      leftPupil.style.transform = `translate(${px}px, ${py}px)`;
+      rightPupil.style.transform = `translate(${px}px, ${py}px)`;
+    });
+  </script>
+        </div>
+
+        <script src="js/global.js"></script>
+    </body>
+</html>
