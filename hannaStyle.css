@@ -21,7 +21,7 @@ body {
     padding: 10px;
 }
 
-.card {
+.hannaCard {
     max-width: 400px;
     background: #B6D7A8;
     border-radius: 8px;
@@ -31,7 +31,7 @@ body {
     width: 300px;
 }
 
-.cardGrid {
+.hannaCardGrid {
     display: grid;
     gap: 20px; 
     padding: 20px; 
