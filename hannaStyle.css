@@ -1,0 +1,47 @@
+body {
+    background-color: #93C47E;
+    color: #00171F;
+    text-align: center;
+}
+
+.aboutCard {
+    max-width: 400px;
+    background: #B6D7A8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #B6D7A9;
+    padding: 20px;
+    margin: 15px;
+    width: 300px;
+
+}
+
+.aboutMe {
+    margin: auto;
+    width: 20%;
+    padding: 10px;
+}
+
+.hannaCard {
+    max-width: 400px;
+    background: #B6D7A8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #B6D7A9;
+    padding: 20px;
+    margin: 15px; 
+    width: 300px;
+}
+
+.hannaCardGrid {
+    display: grid;
+    gap: 20px; 
+    padding: 20px; 
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+i {
+    font-size: 35px;
+    color: #6c757d;
+}
